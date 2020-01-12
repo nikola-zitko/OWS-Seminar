@@ -1,0 +1,241 @@
+/*
+font-family: 'Alata', sans-serif; - naslovi
+font-family: 'Montserrat', sans-serif; - tekst
+
+#0B0C10 - black? - pozadina blokova
+#1F2833 - grey blue - pozadina
+#C5C6C7 - grey - tekst
+#66FCF1 - cyan - naslovi
+#45A29E - dark cyan - obrubi
+
+*/
+
+h1, h2, h3, h4, h5, h6{
+    margin-top: 15;
+    font-family: 'Alata', sans-serif; 
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1F2833;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav img{
+    width: 50%;
+    height: auto;
+    box-shadow: 0 0 10px #45A29E;
+    transition: box-shadow 300ms;
+}
+nav img:hover {
+    box-shadow: 0 0 15px #66FCF1;
+}
+nav{
+    list-style: none;
+    margin: 0;
+    margin-top: -10px;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+    font-size: 180%;
+    background: #0B0C10;
+    color: #C5C6C7;
+    display: inline-block;
+    flex-direction: row;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none;
+    flex-direction: row;
+    display: flex;
+    flex-flow: row;
+}
+
+nav ul li{
+    padding-left: 50;
+    padding-right: 50;
+    height: 80px;
+    line-height: 80px;
+}
+
+nav ul li a {
+    transition: color 300ms;
+    transition: text-shadow 100ms;
+    text-decoration: none;
+    display: flex;
+    padding: 0;
+    color: #45A29E;
+    justify-content: center;
+  }
+  
+nav ul li a:hover {
+    color: #66FCF1;
+    text-shadow: 0 0 5px #66FCF1;
+}
+  
+@media all and (max-width: 800px) {
+    nav ul {
+        justify-content: space-around;
+    }
+}
+  
+@media all and (max-width: 600px) {
+    nav ul {
+        flex-flow: column wrap;
+        padding: 0;
+    }
+    
+    nav ul li a { 
+        text-align: center; 
+        padding: 0;
+        
+    }
+  
+    
+    nav li:last-of-type a {
+        border-bottom: none;
+    }
+}
+
+.naslov{
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    /*color: #66FCF1;*/
+}
+
+.content{
+    
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    border-radius: 20px;
+    /*justify-content: center;*/
+    box-shadow: 0 0 15px #66FCF1 ;
+}
+
+.overlay{
+    padding: 15px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
+    line-height: 150%;
+}
+.overlay2{
+    padding: 10px;
+    position: absolute;
+    line-height: 150%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.content-games{
+    display: grid;
+    background-color: #0B0C10;
+    border-radius: 20px;
+    grid-template-columns: 49.5% 49.5%;
+    grid-template-rows: auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 12px;
+    padding: 15px;
+
+}
+.content-left{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    position: relative;
+    
+}
+.content-left a{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    scale: 1;
+    transform: scale;
+    transition-duration: 0.3s;
+    opacity: 1;
+    transition: .5s ease;
+    
+}
+.subcontent{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    position: relative;
+}
+
+.content-right{
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: auto;
+    grid-column-gap: 2%;
+    grid-row-gap: 6px;
+}
+.content-right a{
+    scale: 1;
+    transform: scale;
+    transition-duration: 0.3s;
+    opacity: 1;
+    transition: .5s ease;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.content-left a:hover{
+    box-shadow: 0 0 30px black ;
+    scale:1.02;
+    opacity: 0.2;
+}
+
+.content-right a:hover{
+    box-shadow: 0 0 30px black;
+    scale:1.05;
+    opacity: 0.2;
+}
+
+
+
+.mini-naslov{
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+}
+
+.comment_area {
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    display: grid;
+    grid-template-columns: 24.5% 24.5% 24.5% 24.5%;
+    grid-template-rows: 150px;
+    grid-column-gap: 1%;
+    grid-row-gap: 12px;
+}
+
+.comment_area .comment {
+    padding: 4px;
+    background-color: #0B0C10;
+    border-radius: 5px;
+    border: 1px #000;
+}
+
+.comment_area .comment .title {
+    margin: 2px;
+    padding: 2px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    background-color: #1F2833;
+    font-size: 120%;
+    font-weight: bold;
+    color: #66FCF1;
+}
