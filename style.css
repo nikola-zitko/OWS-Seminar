@@ -12,13 +12,14 @@ font-family: 'Montserrat', sans-serif; - tekst
 
 h1, h2, h3, h4, h5, h6{
     margin-top: 15;
-    font-family: 'Alata', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
 }
 body{
     margin: 0;
     padding: 0;
     background-color: #1F2833;
     color: white;
+    
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,7 +46,11 @@ nav{
     display: flex;
     flex-flow: row;
     justify-content: center;
-
+    border: 0px;
+    border-bottom: 2px;
+    border-style: solid;
+    animation: rgb infinite linear;
+    animation-duration: 5s;
 }
 
 nav ul {
@@ -157,9 +162,12 @@ nav ul li a:hover {
     display: grid;
     scale: 1;
     transform: scale;
-    transition-duration: 0.3s;
+    
     opacity: 1;
-    transition: .5s ease;
+    transition-property: scale, opacity;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease;
+    filter: blur();
     
 }
 .subcontent{
@@ -184,6 +192,7 @@ nav ul li a:hover {
     transition-duration: 0.3s;
     opacity: 1;
     transition: .5s ease;
+    filter: blur();
 }
 
 img{
@@ -195,12 +204,14 @@ img{
     box-shadow: 0 0 30px black ;
     scale:1.02;
     opacity: 0.2;
+    filter: blur(3px);
 }
 
 .content-right a:hover{
     box-shadow: 0 0 30px black;
     scale:1.05;
     opacity: 0.2;
+    filter: blur(3px);
 }
 
 
@@ -238,4 +249,10 @@ img{
     font-size: 120%;
     font-weight: bold;
     color: #66FCF1;
+}
+@keyframes rgb{
+    0%{border-color: blue;}
+    33%{border-color: red;}
+    66%{border-color: green;}
+    100%{border-color: blue;}
 }
