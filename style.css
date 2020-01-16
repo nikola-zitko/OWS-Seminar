@@ -11,7 +11,7 @@ font-family: 'Montserrat', sans-serif; - tekst
 */
 
 h1, h2, h3, h4, h5, h6{
-    margin-top: 15;
+    margin-top: 10px;
 }
 body{
     margin: 0;
@@ -121,6 +121,65 @@ nav ul li a:hover {
     /*justify-content: center;*/
     box-shadow: 0 0 15px #66FCF1 ;
 }
+._games-content{
+    position: relative;
+    left: 12.5%;
+    width: 75%;
+    border-radius: 20px;
+    /*justify-content: center;*/
+    box-shadow: 0 0 15px #66FCF1 ;
+    margin-top: 15px;
+}
+._games-game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+    background-color: #0B0C10;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+._games-game h2{
+    margin-top: 0px;
+}
+._games-item{
+    padding-right: 30px;
+    align-items: center;
+    width: 300px;
+}
+._games-item-title{
+    padding-right: 10px;
+    align-items: center;
+    flex-grow: 2;
+    
+}
+._games-item-img{
+    padding-right: 10px;
+    align-items: center;
+}
+._game-link{
+    width: 60px;
+    padding-right: 20px;
+    height: auto;
+    filter: invert(100%);
+}
+._game-link img{
+   border-radius: 0px;
+}
+
+.game-text{
+    font-size: larger;
+}
+._games-item-img img{
+    height: 100px;
+    width: auto;
+    border-style: solid;
+    border-color: #66FCF1;
+    border-width: 1px;
+
+}
 
 .overlay{
     padding: 15px;
@@ -147,6 +206,7 @@ nav ul li a:hover {
     padding: 15px;
 
 }
+
 .content-left{
     padding: 0;
     margin: 0;
@@ -229,7 +289,7 @@ img{
 }
 
 .comment_area .comment {
-    position: relative:
+    position: relative;
     padding: 8px;
     margin: 0px;
     background-color: #0B0C10;
@@ -263,7 +323,7 @@ img{
 .comment_area .comment .comment_footer {
     display: flex;
     position: absolute;
-    bottom: 50px;
+    bottom: 5px;
     margin: 4px;
     padding: 4px;
 }
@@ -274,7 +334,7 @@ img{
     padding-right: 15px;
     scale: 1;
     transform: scale 3s;
-    transition: 0.3s;
+    
 }
 
 .comment_area .comment .comment_footer .upvote:hover {
@@ -285,7 +345,7 @@ img{
     width: 35px;
     scale: 1;
     transform: scale;
-    transition: 0.3s;
+    
 }
 
 .comment_area .comment .comment_footer .star:hover {
@@ -293,18 +353,24 @@ img{
 }
 
 .comment_footer img{
-	filter: invert(100%);
+    filter: invert(100%);
+    border-radius: 0;
 }
 
 
 
 footer {
-  margin-top: 20px;
-  padding: 30px;
-  text-align: center;
-  background-color: #0B0C10;
-  font-weight: bold;
-  color: #66FCF1;
+    margin-top: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: #0B0C10;
+    font-weight: bold;
+    color: #66FCF1;
+    border: 0px;
+    border-top: 2px;
+    border-style: solid;
+    animation: rgb infinite linear;
+    animation-duration: 5s;
 }
 
 .contact_box {
