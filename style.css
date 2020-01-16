@@ -139,7 +139,7 @@ nav ul li a:hover {
     background-color: #0B0C10;
     border-radius: 20px;
     padding: 10px;
-    
+
 }
 ._games-game h2{
     margin-top: 0px;
@@ -153,7 +153,7 @@ nav ul li a:hover {
     padding-right: 10px;
     align-items: center;
     flex-grow: 2;
-    
+
 }
 ._games-item-img{
     padding-right: 10px;
@@ -204,7 +204,10 @@ nav ul li a:hover {
     grid-column-gap: 1%;
     grid-row-gap: 12px;
     padding: 15px;
+}
 
+.AIR {
+  height: 19.4%;
 }
 
 .content-left{
@@ -334,7 +337,7 @@ img{
     padding-right: 15px;
     scale: 1;
     transform: scale 3s;
-    
+
 }
 
 .comment_area .comment .comment_footer .upvote:hover {
@@ -345,7 +348,7 @@ img{
     width: 45px;
     scale: 1;
     transform: scale;
-    
+
 }
 
 .comment_area .comment .comment_footer .star:hover {
