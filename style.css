@@ -269,7 +269,7 @@ img{
 }
 
 .comment_area .comment .comment_footer .upvote {
-    width: 35px;
+    width: 45px;
     padding-left: 10px;
     padding-right: 15px;
     scale: 1;
@@ -282,7 +282,7 @@ img{
 }
 
 .comment_area .comment .comment_footer .star {
-    width: 35px;
+    width: 45px;
     scale: 1;
     transform: scale;
     transition: 0.3s;
