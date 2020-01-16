@@ -292,6 +292,12 @@ img{
     scale: 1.1;
 }
 
+.comment_footer img{
+	filter: invert(100%);
+}
+
+
+
 footer {
   margin-top: 20px;
   padding: 30px;
